@@ -1,0 +1,235 @@
+
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" >
+	<title>Web Development</title>
+	<style>
+		*{
+			box-sizing: border-box;
+			font-family: sans-serif;
+			
+		}
+		body{
+			background-image: url(https://previews.123rf.com/images/kittikornphongok/kittikornphongok1505/kittikornphongok150500630/39723083-colorful-watercolor-grunge-texture-background-soft-background-.jpg);
+			background-position: fixed;
+
+		}
+		/*for the heading*/
+		h1{
+			text-align: center;
+			text-shadow: 2px;
+
+
+		}
+		section{
+			border: 2px solid black;
+			margin: 10px;
+			background-color: lightblue;
+		}
+		section > h2{
+			float: right;
+
+			font-style:italic;
+			font-weight: 80%;
+
+			border-left: 2px solid black;
+			border-bottom: 2px solid black;
+			text-align: center;
+			margin: 0;
+			width: 200px;
+			padding-bottom: 10px;
+
+
+		}
+		section>p{
+			text-align: left;
+			text-indent: 50px;
+			letter-spacing: 1px;
+			word-spacing: 2px;
+			font-size: 18px;
+			margin-top: 50px;
+			background-color: lightblue;
+		}
+		section.html > h2{
+			background-color: rgba(255,2,2,.5);
+		}
+		section.css > h2{
+			background-color: rgba(2,255,2,.5);
+		}
+		section.javascript > h2{
+			background-color: rgba(2,2,255,.3);
+		}
+		.row{
+			width: 100%;
+		}
+
+@media (min-width: 992px) {
+    .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+        float: left;
+    }
+    .col-lg-1 {
+        width: 8.33%;
+    }
+    .col-lg-2 {
+        width: 16.66%;
+    }
+    .col-lg-3 {
+        width: 25%;
+    }
+    .col-lg-4 {
+        width: 33.33%;
+    }
+    .col-lg-5 {
+        width: 41.66%;
+    }
+    .col-lg-6 {
+        width: 50%;
+    }
+    .col-lg-7 {
+        width: 58.33%;
+    }
+    .col-lg-8 {
+        width: 66.66%;
+    }
+    .col-lg-9 {
+        width: 74.99%;
+    }
+    .col-lg-10 {
+        width: 83.33%;
+    }
+    .col-lg-11 {
+        width: 91.66%;
+    }
+    .col-lg-12 {
+        width: 100%;
+    }
+}
+
+
+/* Tablet view options */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+        float: left;
+    }
+    .col-md-1 {
+        width: 8.33%;
+    }
+    .col-md-2 {
+        width: 16.66%;
+    }
+    .col-md-3 {
+        width: 25%;
+    }
+    .col-md-4 {
+        width: 33.33%;
+    }
+    .col-md-5 {
+        width: 41.66%;
+    }
+    .col-md-6 {
+        width: 50%;
+    }
+    .col-md-7 {
+        width: 58.33%;
+    }
+    .col-md-8 {
+        width: 66.66%;
+    }
+    .col-md-9 {
+        width: 74.99%;
+    }
+    .col-md-10 {
+        width: 83.33%;
+    }
+    .col-md-11 {
+        width: 91.66%;
+    }
+    .col-md-12 {
+        width: 100%;
+    }
+}
+
+
+/* Mobile view options */
+
+@media (max-width: 767px) {
+    .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+        float: left;
+    }
+    .col-sm-1 {
+        width: 8.33%;
+    }
+    .col-sm-2 {
+        width: 16.66%;
+    }
+    .col-sm-3 {
+        width: 25%;
+    }
+    .col-sm-4 {
+        width: 33.33%;
+    }
+    .col-sm-5 {
+        width: 41.66%;
+    }
+    .col-sm-6 {
+        width: 50%;
+    }
+    .col-sm-7 {
+        width: 58.33%;
+    }
+    .col-sm-8 {
+        width: 66.66%;
+    }
+    .col-sm-9 {
+        width: 74.99%;
+    }
+    .col-sm-10 {
+        width: 83.33%;
+    }
+    .col-sm-11 {
+        width: 91.66%;
+    }
+    .col-sm-12 {
+        width: 100%;
+    }
+}
+
+	</style>
+</head>
+<body>
+	<h1>Web Development</h1>
+	<div class="row">
+		<div class="col-lg-4 col-md-6  col-sm-12" >
+		    <section class="html">
+			    <h2>html</h2>
+				<p>Hypertext Markup Language (HTML) is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.
+
+                Web browsers receive HTML documents from a web server or from local storage and render the documents into multimedia web pages. HTML  describes the structure of a web page semantically and originally included cues for the appearance of the document.</p>
+		    </section>
+		 </div>
+
+		 <div class="col-lg-4 col-md-6  col-sm-12">
+
+		    <section class="css">
+			   <h2>css</h2>
+			   <p>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML.[1] CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.[2]
+
+               CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts.[3] This separation can improve content accessibility, provide more flexibility and control in the specification of presentation characteristics.</p>
+		    </section >
+		 </div>
+
+		<div class="col-lg-4 col-md-12  col-sm-12">
+		    <section class="javascript">
+			  <h2>javascript</h2>
+			  <p>javaScript (/ˈdʒɑːvəˌskrɪpt/),[6] often abbreviated as JS, is a programming language that conforms to the ECMAScript specification.[7] JavaScript is high-level, often just-in-time compiled, and multi-paradigm. It has curly-bracket syntax, dynamic typing.
+              Alongside HTML and CSS, JavaScript is one of the core technologies of the World Wide Web.[8] JavaScript enables interactive web pages and is an essential part of web applications. .</p>
+		    </section>
+	    </div>
+	</div>
+
+</body>
+</html>
